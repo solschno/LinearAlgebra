@@ -1,7 +1,5 @@
 package LinearAlgebra
 
-import "fmt"
-
 type twoDMatrix struct {
 	rows int
 	columns int
