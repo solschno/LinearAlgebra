@@ -18,7 +18,7 @@ func NewMatrix (rows, columns int) twoDMatrix {
 	return a
 }
 
-func transpose(x [][]float64) [][]float64{
+func Transpose(x [][]float64) [][]float64{
 	a := make([][]float64,len(x[0]))
 	for i := 0; i < len(a); i++{
 		a[i] = make([]float64,len(x))
@@ -31,7 +31,7 @@ func transpose(x [][]float64) [][]float64{
 	return a
 }
 
-func addMat (x [][]float64, y [][]float64) [][]float64{
+func AddMat (x [][]float64, y [][]float64) [][]float64{
 	a := make([][]float64,len(x))
 	for i := 0; i < len(a); i++{
 		a[i] = make([]float64,len(x[0]))
@@ -44,7 +44,7 @@ func addMat (x [][]float64, y [][]float64) [][]float64{
 	return a
 }
 
-func scalMult (x [][] float64, y float64) [][]float64{
+func ScalMult (x [][] float64, y float64) [][]float64{
 	a := make([][]float64,len(x))
 	for i := 0; i < len(a); i++{
 		a[i] = make([]float64,len(x[0]))
@@ -57,6 +57,6 @@ func scalMult (x [][] float64, y float64) [][]float64{
 	return a
 }
 
-func dotProd (x [][]float64, y [][]float64)float64{
+func DotProd (x [][]float64, y [][]float64)float64{
 	return 0
 	}
